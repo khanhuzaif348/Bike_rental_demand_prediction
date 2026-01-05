@@ -6,11 +6,11 @@ import os
 st.title("   Daily Bike Rental Prediction")
 st.write("Predict daily bike rental demand based on environmental and seasonal factors")
 MODEL_PATHS = {
-    "Final Model (Best)": "models/bike_rental_model_final.pkl",
     "Linear Regression": "models/Linear_Regression.pkl",
     "Random Forest": "models/Random_forest.pkl",
     "Support Vector Machine": "models/Support_vector_machine.pkl",
-    "XGBoost": "models/xgboost.pkl"
+    "XGBoost": "models/xgboost.pkl",
+    "Final Model (Best)": "models/bike_rental_model_final.pkl"
 }
 
 selected_model = st.selectbox(
