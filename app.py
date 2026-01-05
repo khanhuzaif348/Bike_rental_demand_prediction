@@ -3,10 +3,6 @@ import pandas as pd
 import joblib
 import os
 # load pretrained model 
-
-
-
-
 st.title("   Daily Bike Rental Prediction")
 st.write("Predict daily bike rental demand based on environmental and seasonal factors")
 MODEL_PATHS = {
@@ -28,7 +24,7 @@ def load_model(path):
     return joblib.load(path)
 
 model = load_model(MODEL_PATHS[selected_model])
-###############################3
+
 st.caption(f"Model used: {selected_model}")
 st.set_page_config(page_title="Bike Rental Prediction", layout="centered")
 
@@ -86,4 +82,4 @@ if st.button("Predict Bike Rentals"):
     }])
 
     prediction = model.predict(input_data)[0]
-    st.success(f"🚴 Predicted Daily Bike Rentals: {int(prediction)}")
+    st.success(f" Predicted Daily Bike Rentals: {int(prediction)}")
