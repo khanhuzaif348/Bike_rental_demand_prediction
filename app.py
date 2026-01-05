@@ -84,4 +84,4 @@ if st.button("Predict Bike Rentals"):
     prediction = model.predict(input_data)[0]
    
 
-    st.success(f" Predicted Daily Bike Rentals: {float(prediction)}")
+    st.success(f" Predicted Daily Bike Rentals: {round(float(prediction),2)}")
