@@ -86,19 +86,25 @@ Source: [click Here](https://d3ilbtxij3aepc.cloudfront.net/projects/CDS-Capstone
  * Dynamic model loading in Streamlit
 
 ---
+
 ## Project Structure
+
+```text
 bike_rental_demand/
 │
-├── app.py                  # Streamlit application
-├── models/                 # Saved ML models (.pkl)
+├── app.py                      # Streamlit application
+├── models/                     # Saved ML models (.pkl)
 │   ├── bike_rental_model_final.pkl
 │   ├── Random_forest.pkl
 │   ├── Support_vector_machine.pkl
 │   └── xgboost.pkl
 │
-├── requirements.txt
-├── README.md
-├── .gitignore
+├── requirements.txt            # Project dependencies
+├── README.md                   # Project documentation
+├── .gitignore                  # Ignored files and folders
+└── venv/                       # Virtual environment (ignored)
+```
+
 ---
 
 ## Installation & Run Locally
