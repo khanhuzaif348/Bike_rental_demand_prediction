@@ -80,7 +80,8 @@ if st.button("Predict Bike Rentals"):
         "workingday": workingday,
         "weathersit": weathersit
     }])
-    prediction = model.predict(input_data)[0]
-    prediction = max(0, int(prediction))
 
-    st.success(f" Predicted Daily Bike Rentals: {int(prediction)}")
+    prediction = model.predict(input_data)[0]
+   
+
+    st.success(f" Predicted Daily Bike Rentals: {float(prediction)}")
